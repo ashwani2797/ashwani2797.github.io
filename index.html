@@ -19,11 +19,113 @@
       background-color: #f2f2f2;
       padding: 25px;
     }
+     .fixed {
+        position: fixed;
+        width: 25%;
+}
+      .pos{
+          position: fixed;
+      }
+.scrollit {
+        float: left;
+        width: 71%
+}
+     .bg-1 { 
+      background-color:rgba(0, 0, 0, 0.5); /* Green */
+      color: #ffffff;
+  }
+      .bg-2{
+          background-image:url(brick.jpg);
+          color: black;
+      } 
+      
+      body{
+          background-image:url(brick.jpg);
+      }
+          .small_t { 
+      font-size:20px;
+  }
+      
+.name_link a:link,a:visited,a:hover,a:active {
+    text-decoration: none;
+}
+      
+.container-fluid1 {
+   
+    padding-left:0px;
+    padding-right: 0px;
+}
+      body {
+  min-height: 2000px;
+  padding-top:10px;
+}
+      
+      .projectbox {
+	position: relative;
+	min-height: 465px;
+	width: 25%;
+	margin: 20px;
+	padding: 20px;
+	float: left;
+	font-family: Georgia, serif;
+	color: #ccc;
+	background: rgba(0, 0, 0, 0.70);
+	border: 1px solid rgba(80, 80, 80, 0.5);
+	border-radius: 7px;
+	transition: 0.5s;
+}
+
+.projectbox:hover {
+	background: rgba(0, 0, 0, 0.85);
+	border-color: transparent;
+	transition: 0.5s;
+}
+
+.projectimage {
+	display: block;
+	margin: auto;
+	max-height: 215px;
+	max-width: 100%;
+	border-radius: 5px;
+	margin-bottom: 25px;
+}
+
+.projectname {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.projectlinks {
+	margin-top: 30px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+.projectlinks a {
+	color: #eee;
+	text-decoration: underline;
+	margin: 0 15px 0 10px;
+}
+
+.projectlinks a:hover {
+	color: #e12f27;
+	text-decoration: underline;
+}
+      .clearfix:after {
+	content: " ";	/* Older browser do not support empty content */
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+
   </style>
 </head>
 <body>
-
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -46,70 +148,40 @@
     </div>
   </div>
 </nav>
-
   <div class="row">
-    <div class="col-sm-4">
-        <div class="jumbotron">
+    <div class="col-sm-3 container-fluid1">
+        <div class="jumbotron bg-1">
           <div class="container text-center">
-             <h1>My Portfolio</h1>      
+               <img src="ashwani.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="200" height="200">
+    
              <p>Some text that represents "Me"...</p>
           </div>
        </div>
     </div>
-    <div class="col-sm-12">
-        <div class="jumbotron">
+    <div class="col-sm-9 container-fluid1">
+        <div class="jumbotron bg-2">
             <div class="container text-center">
-                <h1>My Portfolio</h1>      
-                <p>Some text that represents "Me"...</p>
+                			<h1><span class="small_t"><em>I'm  </em></span>
+                                <a class="name_link" href="http://ashwani2797.github.io">Ashwani Kumar</a></h1>
+                <h3>{ Software Engineer }</h3>
+                <p>I'm a programmer and web developer from India, currently studying Computer Science at Chitkara University, Punjab (2014-18 batch).Recently I have worked on projects such as buyoldenbooks.com ( A platform where you sell and buy old books) , Internet Control Electronics ( Home automation with Internet of Things), dawat-e-pasand( Online food ordering website) and Dare Devil game on Scratch Platform </p>
+                <!--<p>Seeking a challenging position as a software engineer in the industry<br>as well as exploring myself to the best in my profession.<br>As a student of CSE I have always given my time in improving my interpersonal<br>as well as technical skills because of which i have reached in attaining my goal.</p>-->
             </div>
       </div>
       </div>
   </div>
 
-  
-<div class="container-fluid bg-3 text-center">    
-  <h3>Some of my Work</h3><br>
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    
+   <div id="projects" class="clearfix">
+		<h1>Projects. <div class="coffeeicon"><span class="fa fa-coffee"></span></div></h1>
+<div class="projectbox">
+		<img src="project-ice.png" alt="ICE - Internet Controlled Electronics" class="projectimage" />
+		<h3 class="projectname">ICE - Internet Controlled Electronics (2016)</h3>
+		<p class="projectinfo">ICE is a home automation project which aims to connect the user to his home appliances via the Internet. Now the control of your home is just a click away, or say, a voice command away.</p>
+		<div class="projectlinks"><span class="fa fa-link"></span><a href="http://anirudhkhanna.github.io/ice" target="_blank">Demo site</a> <span class="fa fa-github-alt"></span><a href="http://anirudhkhanna.github.io/ice" target="_blank">GitHub</a></div>
+		</div>
+       
     </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br>
-
-<div class="container-fluid bg-3 text-center">    
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br><br>
-
 <footer class="container-fluid text-center">
   <p>Footer Text</p>
 </footer>
